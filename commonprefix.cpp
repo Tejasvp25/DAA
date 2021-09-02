@@ -1,10 +1,12 @@
 /**
  *  Name - Tejas Patil
- *  GR No - xxxxxxxx
- *  Roll No - xxxxxx
+ *  GR No - 22020163
+ *  Roll No - 323080
  *  Div - TY-C (C3 Batch) 
  *
  *  @author Tejas-PC
+ * 
+ * https://github.com/Tejasvp25/DAA/blob/master/commonprefix.cpp
  **/
 #include <iostream>
 #include <string>
@@ -38,6 +40,7 @@ int main()
     string arr2[] = {"after", "academy", "mindorks"};
 
     string res = commonPrefix(arr, 3);
+    cout << "Example 1 : ";
     if (res == "-1")
     {
         cout << "No Common prefix found" << endl;
@@ -46,5 +49,17 @@ int main()
     {
         cout << "Common Prefix is : " << res << endl;
     }
+
+    cout << "Example 2 : ";
+    res = commonPrefix(arr2, 3);
+    if (res == "-1")
+    {
+        cout << "No Common prefix found" << endl;
+    }
+    else
+    {
+        cout << "Common Prefix is : " << res << endl;
+    }
+
     return 0;
 }
